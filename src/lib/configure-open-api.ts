@@ -13,5 +13,5 @@ export default function configureOpenAPI(app: AppOpenAPI) {
     },
   });
 
-  app.get("/scalar", Scalar({ defaultHttpClient: { targetKey: "js", clientKey: "fetch" }, theme: "kepler", url: "/doc" }));
+  app.get("/scalar", Scalar({ defaultHttpClient: { targetKey: "js", clientKey: "fetch" }, theme: "kepler", layout: "classic", url: "/doc" }));
 }
